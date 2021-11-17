@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+
+    <style>
+    
+        .menu{ /*menu on the left side of the screen*/
+            width: 250px;
+            height: 50px;
+            background-color:slategrey;
+            /* border Info*/
+            border-right-style: solid;
+            border-width: 10px;
+            border-color:darkslategrey; 
+            border-bottom-right-radius: 50px;
+        }
+        /*mudar para on startup (somehow)*/
+        .menu:hover{
+            width: 99%;
+            transition: 2s;
+            opacity: 100%;
+        }
+        .menuBackground{
+            position:absolute;
+            width: 23% ;
+            height: 90% ;
+            background-color:lightgray;
+            border-bottom-right-radius: 310px;
+
+            /* puts this div on the background*/
+            z-index: -1;
+        }
+        .menuText{ /* text in the menu*/
+            color:  black;
+            opacity: 70%;
+            text-align:left;
+            margin-left: 21%;
+            font-family:monospace;
+            font-size:37px;
+        }
+
+    </style>
+
 </head>
 <body>
+    <!--These divs contain the Menu-->
+    <div class="menuBackground"></div>
+
+    <div class="menu">
+        <h1 class = "menuText">About Me</h1>
+    </div>
+    <div class="menu">
+        <h1 class = "menuText">Works</h1>
+    </div>
+    <div class="menu">
+        <h1 class = "menuText">Contacts</h1>
+    </div>
+
+    <!--End of Menu-->
     
 </body>
 </html>
