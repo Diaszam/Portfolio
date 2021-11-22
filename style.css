@@ -1,5 +1,6 @@
 body{
     margin-left:0px;
+    margin-top: -2%;
 }
 a{
     text-decoration: none;
@@ -7,8 +8,8 @@ a{
 .overallBackground {
     position: absolute;
     width: 100%;
-    height: 100%;
-    background-color: blue;
+    height: 104.4%;
+    background-color:rgb(75, 73, 82);
     margin-top: -25px;
 
     /* puts this div on the background*/
@@ -20,11 +21,11 @@ a{
     /*menu on the left side of the screen*/
     width: 250px;
     height: 50px;
-    background-color: slategrey;
+    background-color: rgb(138, 140, 156);
     /* border Info*/
     border-right-style: solid;
     border-width: 10px;
-    border-color: darkslategrey;
+    border-color: rgb(83, 87, 110);
 
     border-bottom-right-radius: 50px;
 }
@@ -33,11 +34,11 @@ a{
     /*menu on the left side of the screen with startup animation*/
     width: 250px;
     height: 50px;
-    background-color: slategrey;
+    background-color: rgb(138, 140, 156);
     /* border Info*/
     border-right-style: solid;
     border-width: 10px;
-    border-color: darkslategrey;
+    border-color: rgb(66, 70, 92);
 
     border-bottom-right-radius: 50px;
 
@@ -52,7 +53,6 @@ a{
     from {
         width: 250px;
     }
-
     to {
         width: 99%;
     }
@@ -62,7 +62,7 @@ a{
     position: absolute;
     width: 23%;
     height: 90%;
-    background-color: lightgray;
+    background-color: rgb(184, 182, 197);
     border-bottom-right-radius: 310px;
 
     /* puts this div on the background*/
@@ -71,8 +71,7 @@ a{
 
 .menuText {
     /* text in the menu*/
-    color: black;
-    opacity: 70%;
+    color: rgb(60, 60, 63);
     text-align: left;
     margin-left: 21%;
     font-family: monospace;
@@ -80,3 +79,101 @@ a{
 }
 
 /* menu classes end here*/
+
+/*text boxes*/
+.homeTextBox{ /*it's a basic text box for the home menu*/
+    position:absolute;
+    width: 620px;
+    height: 220px;
+    background-color:rgb(44, 41, 83);
+    text-align: center;
+    margin-left: 35%;
+    margin-top: -9%;
+    display: inline-block;
+    border-radius: 10px;
+  
+    animation-name: boxAppearing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.infoTextBox{ /*it's a basic text box for the about me menu*/
+    position:absolute;
+    width: 800px;
+    height: 400px;
+    background-color:rgb(44, 41, 83);
+    text-align: center;
+    margin-left: 33%;
+    margin-top: -9%;
+    display: inline-block;
+    border-radius: 10px;
+  
+    animation-name: boxAppearing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.contactsTextBox{ /*it's a basic text box for the contactsmenu*/
+    position:absolute;
+    width: 130px;
+    height: 400px;
+    background-color:rgb(44, 41, 83);
+    margin-left: 54%;
+    margin-top: -7%;
+    display: inline-block;
+    border-radius: 10px;
+    image-resolution: 40%;
+  
+    animation-name: boxAppearing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+/*text boxes end here*/
+
+/*text (+ icons*/
+.contactsIcons
+{
+    margin-left: 5%;
+    width: 90%;
+}
+.homeText{ /*text for the home page*/
+    color:rgb(2, 1, 15);
+    text-align: center;
+    margin-top: 7%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.infoText{ /* text for the about me page*/
+    color:rgb(2, 1, 15);
+    text-align:left;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 4%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+/*text end here*/
+
+.dot { /* ball, just to look pretty*/ /*might go unused*/
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color:rgb(27, 24, 58);
+    border-radius: 50%;
+    margin-left: 55%;
+    margin-top: 11%;
+
+    animation-name: boxAppearing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes boxAppearing {/*animation for box appearence*/
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
