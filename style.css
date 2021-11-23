@@ -113,10 +113,10 @@ a{
 }
 .contactsTextBox{ /*it's a basic text box for the contactsmenu*/
     position:absolute;
-    width: 130px;
+    width: 150px;
     height: 400px;
     background-color:rgb(54, 51, 87);
-    margin-left: 54%;
+    margin-left: 56%;
     margin-top: -7%;
     display: inline-block;
     border-radius: 10px;
