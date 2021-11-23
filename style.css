@@ -111,7 +111,7 @@ a{
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
-.contactsTextBox{ /*it's a basic text box for the contactsmenu*/
+.contactsTextBox{ /*it's a basic text box for the contacts menu*/
     position:absolute;
     width: 150px;
     height: 400px;
@@ -120,7 +120,21 @@ a{
     margin-top: -7%;
     display: inline-block;
     border-radius: 10px;
-    image-resolution: 40%;
+  
+    animation-name: boxAppearing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.worksBox{ /*it's a basic text box for the works menu*/
+    position:absolute;
+    width: 560x;
+    height: 80px;
+    background-color:rgb(54, 51, 87);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 10px;
+    border-color:rgb(54, 51, 87);
+
   
     animation-name: boxAppearing;
     animation-duration: 3s;
@@ -128,12 +142,24 @@ a{
 }
 /*text boxes end here*/
 
-/*text (+ icons*/
-.contactsIcons
-{
+/*images*/
+.contactsIcons{
     margin-left: 5%;
     width: 90%;
 }
+.works{
+    width: 450px;
+    margin-left: 42%;
+    margin-top: -7%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(26, 25, 27);
+
+    animation-name: boxAppearing;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+/*text */
 .homeText{ /*text for the home page*/
     color:rgb(2, 1, 15);
     text-align: center;
@@ -150,20 +176,20 @@ a{
     font-family:'Times New Roman', Times, serif;
     font-size: 30px;
 }
+.worksText{ /* text for the about me page*/
+    color:rgb(2, 1, 15);
+    margin-top: 4%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+}
 /*text end here*/
 
-.dot { /* ball, just to look pretty*/ /*might go unused*/
-    position: absolute;
-    height: 90px;
-    width: 90px;
-    background-color:rgb(27, 24, 58);
-    border-radius: 50%;
-    margin-left: 55%;
-    margin-top: 11%;
-
-    animation-name: boxAppearing;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+.worksDiv{
+    position: relative;
+    width: 800px;
+    height: 300px;
+    margin-left: 42%;
+    margin-top: 2%;
 }
 @keyframes boxAppearing {/*animation for box appearence*/
     0%{
