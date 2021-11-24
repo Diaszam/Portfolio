@@ -7,13 +7,17 @@ a{
     text-decoration: none;
 }
 .overallBackground {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 104.4%;
     background-color:rgb(75, 73, 82);
     margin-top: -25px;
     /* puts this div on the background*/
     z-index: -2;
+}
+
+.scrollable{
+    position: fixed;
 }
 
 /* menu classes*/
