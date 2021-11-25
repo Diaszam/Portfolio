@@ -9,15 +9,11 @@ a{
 .overallBackground {
     position: fixed;
     width: 100%;
-    height: 104.4%;
+    height: 120%;
     background-color:rgb(75, 73, 82);
     margin-top: -25px;
     /* puts this div on the background*/
     z-index: -2;
-}
-
-.scrollable{
-    position: fixed;
 }
 
 /* menu classes*/
@@ -49,6 +45,8 @@ a{
     animation-name: menuAnimation;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+
+    z-index: +2;
 }
 
 @keyframes menuAnimation {
@@ -58,19 +56,21 @@ a{
         width: 250px;
     }
     to {
-        width: 99%;
+        width: 430%;
     }
 }
 
 .menuBackground {
-    position: absolute;
+  /*  position: absolute; */
     width: 23%;
     height: 90%;
     background-color: rgb(184, 182, 197);
     border-bottom-right-radius: 310px;
 
     /* puts this div on the background*/
-    z-index: -1;
+
+    position: fixed;
+    display: inline-block;
 }
 
 .menuText {
@@ -92,7 +92,7 @@ a{
     background-color:rgb(54, 51, 87);
     text-align: center;
     margin-left: 35%;
-    margin-top: -9%;
+    margin-top: 13.5%;
     display: inline-block;
     border-radius: 10px;
   
@@ -107,7 +107,7 @@ a{
     background-color:rgb(54, 51, 87);
     text-align: center;
     margin-left: 33%;
-    margin-top: -9%;
+    margin-top: 13.5%;
     display: inline-block;
     border-radius: 10px;
   
@@ -121,7 +121,7 @@ a{
     height: 400px;
     background-color:rgb(54, 51, 87);
     margin-left: 56%;
-    margin-top: -7%;
+    margin-top: 13.5%;
     display: inline-block;
     border-radius: 10px;
   
